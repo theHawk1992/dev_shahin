@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormChallenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>contact us</h1>
+    </header>
+    <main>
+      <form action="/index.html" method="get">
+        <section>
+          <h2>how can we help you?</h2>
+          <ul>
+            <li class="list">
+              <div class="boxstyle">
+                <label for="username" class="labales">Your Name</label>
+                <input class="userinput"
+                  type="text"
+                  name="user-name"
+                  id="username"
+                  required
+                />
+              </div>
+            </li>
+            <li class="list">
+              <div class="boxstyle">
+                <label for="email" class="labales">Your E-Mail Address</label>
+                <input class="userinput"
+                  type="email"
+                  name="email-address"
+                  id="email"
+                  required
+                />
+              </div>
+            </li class="list">
+            <li>
+              <div class="boxstyle">
+                  <label for="phonenumber" class="labales">your phone number</label>
+                  <input type="number" name="phone-number" id="phonenumber" required>
+              </div>
+            </li>
+            <li class="list">
+                <div class="boxstyle">
+                    <label for="comment" class="labales">your message</label>
+                    <textarea name="text-area" class="userinput" id="comment" cols="10" rows="7"></textarea>
+                </div>
+            </li>
+            <li class="list">
+                <div class="boxstyle">
+                    <label for="drop-down" class="labales">how did you find us?</label>
+                    <select name="dropdown" class="userinput" id="drop-down">
+                        <option value="">web search</option>
+                        <option value="">friends</option>
+                        <option value="">tv advertise</option>
+                        <option value="">social media</option>
+                    </select>
+                </div>
+            </li>
+          </ul>
+        </section>
+        <section>
+            <h2>how should we reply?</h2>
+            <ul>
+                <li>
+                    <article id="radiotype">
+                        <div class="horizental">
+                            <input type="radio" name="radio-button" id="viaphone">
+                            <label for="viaphone">Call me</label>
+                        </div>
+                        <div class="horizental">
+                            <input type="radio" name="radio-button" id="viaemail">
+                            <label for="viaemail">Send me an email</label>
+                        </div>
+                        <div class="horizental">
+                            <input type="radio" name="dontreply" id="donotreply">
+                            <label for="donotreply">dont reply</label>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <div id="acceptterms">
+                        <input type="checkbox" name="check-box" id="terms" required>
+                        <label for="terms">accept terms</label>
+                    </div>
+                </li>
+                <li class="control">
+                    <button type="reset" class="btn" id="clearbtn">Clear</button>
+                    <button type="submit" class="btn" id="submitbtn">Submit</button>
+                </li>
+            </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
